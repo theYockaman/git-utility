@@ -30,6 +30,10 @@ delete_app() {
     source /usr/local/lib/git-utility/delete_app.sh
 }
 
+clean_history() {
+    source /usr/local/lib/git-utility/clean_history.sh
+}
+
 
 
 # Example utility function

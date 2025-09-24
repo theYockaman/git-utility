@@ -15,7 +15,7 @@ source "/usr/local/lib/git-utility/utils.sh"
 main_menu() {
 
     
-    OPTIONS=("Install Repository" "Pull Repository" "Push Repository" "Install Git" "Delete" "Exit")
+    OPTIONS=("Install Repository" "Pull Repository" "Push Repository" "Config Git" "Clean History" "Delete" "Exit")
 
     while true; do
         CHOICE=$(whiptail --title "Select an Action" --menu "Choose an option:" 20 60 10 \
@@ -23,6 +23,7 @@ main_menu() {
             "Pull Repository" "" \
             "Push Repository" "" \
             "Config Git" "" \
+            "Clean History" "" \
             "Delete" "" \
             "Exit" "" \
             3>&1 1>&2 2>&3)
@@ -38,6 +39,7 @@ main_menu() {
             "Pull Repository") pull_repository ;;
             "Push Repository") push_repository ;;
             "Config Git") config_git ;;  
+            "Clean History") clean_history ;;
             "Delete") delete_app ;;
             "Exit") exit_program ;;
             *) whiptail --title "Error" --msgbox "Invalid option selected!" 10 50 ;;
@@ -61,6 +63,9 @@ run_command() {
             ;;
         "config-git")
             config_git &
+            ;;
+        "clean-history")
+            clean_history &
             ;;
         "delete")
             delete_app &

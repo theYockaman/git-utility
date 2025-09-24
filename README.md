@@ -6,5 +6,5 @@
 
 ### Ubuntu
 ```
-curl -s https://raw.githubusercontent.com/theYockaman/git-utility/main/ubuntu/install.sh | sudo bash
+sudo curl -s https://raw.githubusercontent.com/theYockaman/git-utility/main/ubuntu/install.sh | sudo bash
 ```
