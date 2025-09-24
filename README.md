@@ -4,7 +4,12 @@
 ## Installation 
 
 
-### Ubuntu
+### Ubuntu/Debian
 ```
 sudo curl -s https://raw.githubusercontent.com/theYockaman/git-utility/main/ubuntu/install.sh | sudo bash
 ```
+
+## Functions to be Added
+- [ ] Deletion of a Repository
+- [ ] Double Check Parameter Runs 
+- [ ] Make Better Tests
